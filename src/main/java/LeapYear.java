@@ -1,11 +1,11 @@
 public class LeapYear {
     public static void main(String[] args) {
-
-        if (366 % 2 == 0) {
+        int rokPrzestepny = 2012;
+        if (rokPrzestepny % 4 == 0 && rokPrzestepny % 100 == 0 && rokPrzestepny % 400 == 0) {
             System.out.println("Rok przestępny");
         }
-        else if (366 % 3 == 0 && 365 % 73 == 1); {
+        else {
             System.out.println("Rok nieprzestępny");
-        }
+        };
     }
 }
