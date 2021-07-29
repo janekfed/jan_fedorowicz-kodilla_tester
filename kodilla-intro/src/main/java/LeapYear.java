@@ -18,5 +18,4 @@ public class LeapYearTest {
             System.out.println("Rok nie jest przestępny");
         }
     }
-
 }
