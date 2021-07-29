@@ -12,8 +12,6 @@ public class LeapYearTest {
         if (leapYear < -238) {
             System.out.println("Rok przestępny wprowadzono dopiero w 258 r.p.n.e. ");
         }
-        if (leapYear >= -238 && leapYear % 4 == 0 || leapYear % 100 == 0 && leapYear % 400 == 0) {
-        }
         else {
             System.out.println("Rok nie jest przestępny");
         }
