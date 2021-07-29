@@ -1,12 +1,22 @@
 import java.util.Scanner;
-public class LeapYear {
+
+public class LeapYearTest {
     public static void main(String[] args) {
-        int rokPrzestepny = 2020;
-        if (rokPrzestepny % 4 == 0 || rokPrzestepny % 100 == 0 && rokPrzestepny % 400 == 0) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Wybierz rok (minus przed rokiem dla lat p.n.e.):");
+        int leapYear = sc.nextInt();
+
+        if (leapYear >= -238 && leapYear % 4 == 0 || leapYear % 100 == 0 && leapYear % 400 == 0) {
             System.out.println("Rok przestępny");
         }
+        if (leapYear < -238) {
+            System.out.println("Rok przestępny wprowadzono dopiero w 258 r.p.n.e. ");
+        }
+        if (leapYear >= -238 && leapYear % 4 == 0 || leapYear % 100 == 0 && leapYear % 400 == 0) {
+        }
         else {
-            System.out.println("Rok nieprzestępny");
-        };
+            System.out.println("Rok nie jest przestępny");
+        }
     }
+
 }
