@@ -15,7 +15,8 @@ public class Notebook {
         }
         else if (this.price >= 600 && this.price <= 1000) {
             System.out.println("Good price.");
-        } else {
+        }
+        else if (this.price > 1000){
             System.out.println("Expensive.");
         }
     }
@@ -25,12 +26,13 @@ public class Notebook {
             System.out.println("Light notebook.");
         }
         else if (this.weight >= 700 && this.weight <= 1500) {
-            System.out.println("Very heavy.");
+            System.out.println("Not too heavy.");
         } else {
-            System.out.println("Too heavy.");
+            System.out.println("Very heavy.");
         }
     }
-    public void checkYear() {
+
+    public void checkYearAndPrice() {
         if (this.price < 1200 && this.year > 2018) {
             System.out.println("New and cheap notebook.");
         }
