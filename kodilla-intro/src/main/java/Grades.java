@@ -25,7 +25,6 @@ public class Grades {
 
     public int average(int[] grades) {
         int result = 0;
-        int size = 0;
         for (int i = 0; i < grades.length; i++) {
             result = result + grades[i];
             // [1,2,3,4,5] - tablica z wartościami
